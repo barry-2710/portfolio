@@ -1,0 +1,160 @@
+.contact-section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    overflow: hidden; 
+}
+.color-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: indigo;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.7;
+}
+.video-containerr{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+#video-content{
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    margin: 15px;
+}
+.flip-card {
+    background-color: transparent;
+    position: relative;
+    left: 50px;
+    width: 400px;
+    height: 250px;
+    perspective: 1000px;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #26495f;
+    color: white;
+    transform: rotateY(180deg);
+    justify-content: center;
+  }
+  #card-img{
+    width:400px;
+    height:250px;
+  }
+
+@media screen and (min-width: 800px) {
+    #contact-form{
+        position: relative;
+        left: 60%;
+    }
+    #contact-form-card{
+        height: 400px;
+        width: 300px;
+        position: relative;
+    }
+}
+#icon{
+    position: relative;
+    top: 7px;
+}
+@media only screen and (max-width: 600px) {
+
+  .flip-card {
+    background-color: transparent;
+    width: 350px;
+    height: 250px;
+    perspective: 1000px;
+    position: relative;
+    left: -24%;
+    top: auto;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-card-back {
+    background-color: #26495f;
+    color: white;
+    transform: rotateY(180deg);
+    justify-content: center;
+  }
+  #card-img{
+    width:350px;
+    height:250px;
+  }
+  #contact-form-card{
+    height: 400px;
+    width: 300px;
+    position: relative;
+}
+.contact-section{
+justify-content: center;
+}
+
+}
+ 
+#name,#mobile,#email{
+  font-size: 14px;
+  padding-top: 15px;
+}
+#submit{
+  position: relative;
+  top: 40px;
+}

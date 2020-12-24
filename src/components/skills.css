@@ -1,0 +1,32 @@
+#skills-container{
+    position: relative;
+    top: 10%;
+}
+#gear{
+    position: relative;
+    height: 100px;
+    width: 100px;
+    top: 450px;
+    left: 400px;
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+    animation-name: spin;
+}
+#gear1{
+    position: relative;
+    height: 70px;
+    width: 70px;
+    top: 450px;
+    left: 398px;
+    -webkit-animation:spin 20s linear infinite;
+    -moz-animation:spin 20s linear infinite;
+    animation:spin 20s linear infinite;
+    animation-name: spin1;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(360deg); } } 
+@-moz-keyframes spin1 { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin1 { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin1 { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } } 
